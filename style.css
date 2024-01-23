@@ -13,6 +13,8 @@
 
 body {
     background: var(--Light-pink);
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
 }
 
 .main-title {
@@ -30,8 +32,8 @@ body {
     display: block;
     max-width: 450px;
     background-color: white;
-    margin: 0 auto;
-    margin-top: 100px;
+    margin: 100px auto;
+    margin-bottom: 100px;
     border-radius: 1rem;
 }
 
@@ -49,14 +51,35 @@ body {
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
-    background-color: #ccc;
+    color: rgb(172, 0, 172);
 }
+
+.accordion:after {
+    content: url(/assets/images/icon-plus.svg);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: url(/assets/images/icon-minus.svg);
+  }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    padding: .5rem 0;
-    color: grey;
     font-size: .9rem;
-    display: none;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* MOBILE SCREEN */
+@media screen and (max-width: 600px){
+    body {
+        margin-inline: 1rem;
+    }
+    .container {
+        max-width: 350px;
+        justify-content: space-around;
+    }
 }
