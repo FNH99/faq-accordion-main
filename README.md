@@ -23,7 +23,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://github.com/FNH99/blog-preview-card-main/blob/main/assets/images/screenshot.png)
+![](https://github.com/FNH99/faq-accordion-main/blob/main/assets/images/screenshot-desktop.png)
+
+![](https://github.com/FNH99/faq-accordion-main/blob/main/assets/images/screenshot-mobile.png)
 
 ### Links
 
